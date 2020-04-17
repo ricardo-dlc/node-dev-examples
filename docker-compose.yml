@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  web:
+    container_name: node-app
+    hostname: node-app
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/usr/app/src
+      - ./package.json:/usr/app/package.json
+    networks:
+      - backend
+    command: npm run dev
+networks:
+  backend:
+    external:
+      name: backend
