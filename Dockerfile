@@ -3,7 +3,7 @@ ENV TZ=America/Cancun
 RUN apk add -U tzdata && \
     cp /usr/share/zoneinfo/$TZ /etc/localtime
 WORKDIR /usr/app
-COPY /src/package*.json .
+COPY /src/package*.json ./
 RUN npm install
 # COPY /src .
 # WORKDIR /app
