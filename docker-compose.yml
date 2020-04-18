@@ -3,12 +3,14 @@ services:
   web:
     container_name: node-app
     hostname: node-app
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ./src:/usr/app/src
-      - ./package.json:/usr/app/package.json
+      - /usr/app/node_modules
+      - ./src:/usr/app
     networks:
       - backend
     command: npm run dev
