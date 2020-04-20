@@ -9,4 +9,4 @@ RUN npm install
 # WORKDIR /app
 # RUN chmod 777 /app/init_project.sh
 # RUN pip install -r ../requirements.txt
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "test" ]
