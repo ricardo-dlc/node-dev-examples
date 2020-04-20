@@ -1,0 +1,21 @@
+{
+    "author": "Ricardo de la Cruz <the_phantom_racer@hotmail.com>",
+    "name": "cadu-api-app",
+    "description": "CAPI",
+    "version": "0.1.0",
+    "main": "src/hello-world.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx nodemon express.js"
+    },
+    "keywords": [
+        "Docker",
+        "nodejs"
+    ],
+    "dependencies": {
+        "express": "4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.2"
+    }
+}
