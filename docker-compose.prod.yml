@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  app:
+    container_name: node-prod-app
+    hostname: node-prod-app
+    image: node-prod-app
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    # user: "1000:1000"
+    ports:
+      - "8000:8000"
+    #   - "8001:8001"
+    #   - "8002:8002"
+    #   - "8003:8003"
+    #   - "8004:8004"
+    # volumes:
+    #   - /usr/app/node_modules
+    #   - ./src:/usr/app
+    networks:
+      - backend
+    command: npm run dev
+networks:
+  backend:
+    external:
+      name: backend

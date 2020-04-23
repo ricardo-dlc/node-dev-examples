@@ -5,4 +5,9 @@ RUN apk add -U tzdata && \
 WORKDIR /usr/app
 COPY /app/package*.json ./
 RUN npm install
+WORKDIR /usr/app/src
+COPY /app/src/ ./
+# WORKDIR /app
+# RUN chmod 777 /app/init_project.sh
+# RUN pip install -r ../requirements.txt
 CMD [ "npm", "run", "test" ]

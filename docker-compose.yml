@@ -1,24 +1,26 @@
 version: "3.7"
 services:
-  web:
-    container_name: node-app
-    hostname: node-app
+  app-dev:
+    container_name: node-dev-app
+    hostname: node-dev-app
+    image: node-dev-app
+    stdin_open: true
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile
-    user: "1000:1000"
     ports:
-      - "8000:8000"
+      # - "8000:8000"
       - "8001:8001"
       - "8002:8002"
       - "8003:8003"
       - "8004:8004"
     volumes:
       - /usr/app/node_modules
-      - ./src:/usr/app
+      - ./app/src:/usr/app/src
     networks:
       - backend
-    command: npm run dev
+    command: /bin/sh
 networks:
   backend:
     external:
