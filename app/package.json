@@ -6,7 +6,7 @@
     "main": "src/hello-world.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "npx nodemon express.js"
+        "dev": "npx nodemon src/express.js"
     },
     "keywords": [
         "Docker",
