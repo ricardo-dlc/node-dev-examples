@@ -4,6 +4,7 @@ services:
     container_name: node-dev-app
     hostname: node-dev-app
     image: node-dev-app
+    restart: always
     stdin_open: true
     tty: true
     build:
