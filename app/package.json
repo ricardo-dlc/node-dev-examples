@@ -6,7 +6,8 @@
     "main": "src/hello-world.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "npx nodemon src/express.js"
+        "dev": "npx nodemon src/express.js",
+        "start": "node src/curso/node/06-webserver/server"
     },
     "keywords": [
         "Docker",
@@ -16,6 +17,7 @@
         "axios": "^0.19.2",
         "colors": "^1.4.0",
         "express": "^4.17.1",
+        "hbs": "^4.1.1",
         "yargs": "^15.3.1"
     },
     "devDependencies": {
