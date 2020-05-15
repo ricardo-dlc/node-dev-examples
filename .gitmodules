@@ -1,3 +1,6 @@
 [submodule "app/src/curso/node/07-restserver"]
 	path = app/src/curso/node/07-restserver
 	url = git@github.com:ricardo-dlc/07-ejemplo-express.git
+[submodule "app/src/curso/node/08-sockets"]
+	path = app/src/curso/node/08-sockets
+	url = git@github.com:ricardo-dlc/08-sockets.git
