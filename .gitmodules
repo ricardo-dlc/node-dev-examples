@@ -4,3 +4,6 @@
 [submodule "app/src/curso/node/08-sockets"]
 	path = app/src/curso/node/08-sockets
 	url = git@github.com:ricardo-dlc/08-sockets.git
+[submodule "app/src/curso/node/09-sockets-colas"]
+	path = app/src/curso/node/09-sockets-colas
+	url = git@github.com:ricardo-dlc/09-sockets-colas.git
