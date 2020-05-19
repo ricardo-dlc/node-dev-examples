@@ -7,3 +7,6 @@
 [submodule "app/src/curso/node/09-sockets-colas"]
 	path = app/src/curso/node/09-sockets-colas
 	url = git@github.com:ricardo-dlc/09-sockets-colas.git
+[submodule "app/src/curso/node/10-sockets-chat"]
+	path = app/src/curso/node/10-sockets-chat
+	url = git@github.com:ricardo-dlc/10-chat-con-sockets.git
