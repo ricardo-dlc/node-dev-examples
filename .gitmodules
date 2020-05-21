@@ -10,3 +10,6 @@
 [submodule "app/src/curso/node/10-sockets-chat"]
 	path = app/src/curso/node/10-sockets-chat
 	url = git@github.com:ricardo-dlc/10-chat-con-sockets.git
+[submodule "app/src/curso/node/11-typescript-mysql"]
+	path = app/src/curso/node/11-typescript-mysql
+	url = git@github.com:ricardo-dlc/11-typescript-mysql.git
