@@ -1,4 +1,4 @@
-FROM ricardodlc/docker-nodejs-base-image:latest
+FROM ricardodlc/docker-nodejs-base-image:1.1.1
 
 LABEL author="Ricardo de la Cruz" version="2.1.0"
 
