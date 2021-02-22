@@ -6,16 +6,18 @@
     "main": "src/hello-world.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "npx nodemon src/express.js"
+        "dev": "npx nodemon src/express.js",
+        "start": "node src/curso/node/06-webserver/server"
     },
     "keywords": [
         "Docker",
         "nodejs"
     ],
     "dependencies": {
-        "express": "4.17.1"
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1"
     },
     "devDependencies": {
-        "nodemon": "2.0.2"
+        "nodemon": "^2.0.3"
     }
 }
